@@ -7,6 +7,7 @@ import numpy as np
 from cnn import Model
 from pprint import pprint
 class NnEnv(gym.Env):
+
     def __init__(self, num_layers=2, num_hyperparams=2, num_hyperparams_vals=4,num_filters=64, filter_height_vals=[1,3,5,7],
                 filter_width_vals=[1,3,5,7], num_filters_vals=[24,36,48,64], strides=[1,2,3,4], epochs=1,debug=False):
 
@@ -36,7 +37,6 @@ class NnEnv(gym.Env):
         self._seed()
         self.reset()
         self.debug=debug
-
 
     def _step(self, action):
         if self.debug:

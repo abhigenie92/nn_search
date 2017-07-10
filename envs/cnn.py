@@ -8,6 +8,7 @@ from torchvision import datasets, transforms
 from torch.autograd import Variable
 
 class Net(nn.Module):
+
     def __init__(self,hyper_params):
         super(Net, self).__init__()
         self.convs=[]
@@ -51,13 +52,16 @@ class Net(nn.Module):
         return x
 
 
+
 class Model:
+
     batch_size=64
     test_batch_size=1000    
     seed=1
     log_interval=10
     no_cuda=True
     cuda = not no_cuda and torch.cuda.is_available()
+    
     def __init__(self, epochs=10,lr=0.01,momentum=0.5,debug=False):
         # Training settings    
         self.epochs=epochs

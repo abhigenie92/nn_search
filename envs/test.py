@@ -5,7 +5,7 @@ from nn_env import NnEnv
 from time import sleep
 
 class TestLeftRightEnv(unittest.TestCase):
-
+	
     def test_env(self):
         env = NnEnv()
         env.reset()
