@@ -35,7 +35,7 @@ class NnEnv(gym.Env):
         self.epochs = epochs
         
         self.layers_params=[]
-        self._seed()
+        #self._seed()
         self.reset()
         self.debug=debug
 
@@ -93,8 +93,8 @@ class NnEnv(gym.Env):
         return observation, reward, done, {}
 
     def _reset(self):
-        self.state = [0,0] # [current layer, current hyper-parameter] 
-        return np.array(self.state)
+        self.state=[0,0]
+        return np.zeros(self.num_hyperparams_vals)
 
     def _seed(self, seed=None):
         self.np_random, seed = seeding.np_random(seed)

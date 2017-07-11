@@ -20,6 +20,7 @@ class TestLeftRightEnv(unittest.TestCase):
 
 def test_debug():
 	env = NnEnv()
+	env.seed(160)
 	env.reset()
 	done=False
 	while not done:
