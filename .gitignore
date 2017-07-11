@@ -5,5 +5,5 @@
 .idea
 /logs
 *~
-
+/trash
 .DS_Store
