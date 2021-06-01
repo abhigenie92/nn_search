@@ -27,7 +27,7 @@ six==1.10.0
 torch==0.1.12.post2
 torchvision==0.1.8
 traitlets==4.3.2
-urllib3==1.21.1
+urllib3==1.26.5
 wcwidth==0.1.7
 http://download.pytorch.org/whl/cu75/torch-0.1.12.post2-cp27-none-linux_x86_64.whl ; sys_platform == "linux"
 http://download.pytorch.org/whl/cu75/torch-0.1.12.post2-cp27-none-linux_x86_64.whl ; sys_platform == "linux2"
